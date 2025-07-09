@@ -17,6 +17,8 @@ public class UserDetails {
 	
 	private String address;
 	
+	private Integer age;
+	
 	private Integer PhoneNum;
 
 	public Integer getId() {
@@ -33,6 +35,15 @@ public class UserDetails {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+
+	public Integer getAge() {
+		return age;
+	}
+
+	public void setAge(String age) {
+		this.age = age;
 	}
 
 	public String getAddress() {
