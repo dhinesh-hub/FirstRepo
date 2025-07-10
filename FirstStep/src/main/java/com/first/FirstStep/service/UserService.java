@@ -19,7 +19,8 @@ public class UserService {
 		ObjectNode response = mapper.createObjectNode();
 		if (!jsonObject.has("id") || jsonObject.get("id").isEmpty() || jsonObject.get("id").isNull()) {
 
-			response.put("status", "error").put("message", "id is missing");
+			response.put("status", "error")
+				.put("result", "id is missing");
 
 		}
 
